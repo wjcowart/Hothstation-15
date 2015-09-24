@@ -125,9 +125,9 @@
 	switch(severity)
 		if(1.0)
 			if(prob(80))
-				src.ReplaceWithLattice()
+
 			else if(prob(50))
-				src.ChangeTurf(get_base_turf(src.z))
+				src.ChangeTurf(/turf/simulated/floor/plating/ironsand)
 			else
 				var/turf/simulated/floor/F = src
 				F.make_plating()

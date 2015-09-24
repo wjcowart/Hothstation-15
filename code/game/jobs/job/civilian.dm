@@ -341,33 +341,6 @@
 
 
 //More or less assistants
-/datum/job/librarian
-	title = "Librarian"
-	flag = LIBRARIAN
-	department_flag = CIVILIAN
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the head of personnel"
-	selection_color = "#dddddd"
-	access = list(access_library, access_maint_tunnels)
-	minimal_access = list(access_library)
-	alt_titles = list("Journalist", "Game Master")
-
-	pdaslot=slot_belt
-	pdatype=/obj/item/device/pda/librarian
-
-	equip(var/mob/living/carbon/human/H)
-		if(!H)	return 0
-		H.equip_or_collect(new /obj/item/clothing/under/suit_jacket/red(H), slot_w_uniform)
-		//H.equip_or_collect(new /obj/item/device/pda/librarian(H), slot_belt)
-		H.equip_or_collect(new /obj/item/clothing/shoes/black(H), slot_shoes)
-		H.equip_or_collect(new /obj/item/weapon/barcodescanner(H), slot_l_hand)
-		if(H.backbag == 1)
-			H.equip_or_collect(new H.species.survival_gear(H), slot_r_hand)
-		else
-			H.equip_or_collect(new H.species.survival_gear(H.back), slot_in_backpack)
-		return 1
 
 
 
