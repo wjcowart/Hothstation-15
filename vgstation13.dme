@@ -1952,5 +1952,6 @@
 #include "maps\RandomZLevels\challenge.dm"
 #include "maps\RandomZLevels\stationCollision.dm"
 #include "maps\RandomZLevels\wildwest.dm"
+#include "maps\RandomZLevels\arcticwaste.dmm"
 #include "maps\tgstation\pipes.dm"
 // END_INCLUDE

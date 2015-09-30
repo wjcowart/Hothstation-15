@@ -46,6 +46,44 @@
 	qdel(src)
 	return
 
+/mob/living/simple_animal/hostile/syndicatechef
+	name = "Syndicate Chef"
+	desc = "Has a crazy look in his eyes."
+	icon_state = "syndicate_chef"
+	icon_living = "syndicate_chef"
+	icon_dead = "syndicate_chef_dead"
+	icon_gib = "syndicate_gib"
+	faction = "syndicate"
+
+/mob/living/simple_animal/hostile/syndicatejanitor
+	name = "Syndicate Janitor"
+	desc = "Don't let 'em slip you!"
+	icon_state = "syndicate_janitor"
+	icon_living = "syndicate_janitor"
+	icon_dead = "syndicate_janitor_dead"
+	icon_gib = "syndicate_gib"
+	faction = "syndicate"
+
+/mob/living/simple_animal/hostile/syndicateengineer
+	name = "Syndicate Engineer"
+	desc = "Looks hopelessly confused."
+	icon_state = "syndicate_engineer"
+	icon_living = "syndicate_engineer"
+	icon_dead = "syndicate_engineer_dead"
+	icon_gib = "syndicate_gib"
+	attacktext = "punches"
+	faction = "syndicate"
+
+/mob/living/simple_animal/hostile/syndicatedoctor
+	name = "Syndicate Doctor"
+	desc = "Probably isn't actually a real doctor."
+	icon_state = "syndicate_doctor"
+	icon_living = "syndicate_doctor"
+	icon_dead = "syndicate_doctor_dead"
+	icon_gib = "syndicate_gib"
+	attacktext = "jabs a syringe into"
+	faction = "syndicate"
+
 ///////////////Sword and shield////////////
 
 /mob/living/simple_animal/hostile/syndicate/melee
