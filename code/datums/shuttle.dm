@@ -659,7 +659,7 @@
 
 		if(D && istype(D)) replacing_turf_type = D.base_turf_type
 
-		old_turf.ChangeTurf(replacing_turf_type)
+		old_turf.ChangeTurf(/turf/simulated/floor/engine)
 
 		if(D && istype(D))
 			if(D.base_turf_icon)
