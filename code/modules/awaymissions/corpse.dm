@@ -274,3 +274,26 @@
 
 /obj/effect/landmark/corpse/russian/ranged
 	corpsehelmet = /obj/item/clothing/head/ushanka
+
+/obj/effect/landmark/corpse/cultist
+	name = "Cultist"
+	corpseuniform = /obj/item/clothing/under/color/black
+	corpsesuit = /obj/item/clothing/suit/cultrobes
+	corpseshoes = /obj/item/clothing/shoes/cult
+	corpsegloves = /obj/item/clothing/gloves/red
+	corpsehelmet = /obj/item/clothing/head/culthood
+
+/obj/effect/landmark/corpse/cultist_armored
+	name = "Cultist"
+	corpseuniform = /obj/item/clothing/under/color/black
+	corpsesuit = /obj/item/clothing/suit/cultrobes/alt
+	corpseshoes = /obj/item/clothing/shoes/cult
+	corpsegloves = /obj/item/clothing/gloves/red
+	corpsehelmet = /obj/item/clothing/head/helmet/space/cult
+
+/obj/effect/landmark/corpse/cultist_unarmed
+	name = "Cultist"
+	corpseuniform = /obj/item/clothing/under/color/black
+	corpsesuit = /obj/item/clothing/suit/cultrobes
+	corpseshoes = /obj/item/clothing/shoes/cult
+	corpsegloves = /obj/item/clothing/gloves/red
