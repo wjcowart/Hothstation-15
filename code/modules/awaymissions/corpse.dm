@@ -297,3 +297,4 @@
 	corpsesuit = /obj/item/clothing/suit/cultrobes
 	corpseshoes = /obj/item/clothing/shoes/cult
 	corpsegloves = /obj/item/clothing/gloves/red
+	corpsepocket1 = /obj/item/weapon/card/id/salvage_captain
