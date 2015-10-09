@@ -272,6 +272,21 @@
 	corpseshoes = /obj/item/clothing/shoes/jackboots
 	corpsehelmet = /obj/item/clothing/head/bearpelt/real
 
+/obj/effect/landmark/corpse/russian_unarmed
+	name = "Russian"
+	corpseuniform = /obj/item/clothing/under/soviet
+	corpseshoes = /obj/item/clothing/shoes/jackboots
+	corpsehelmet = /obj/item/clothing/head/ushanka
+
+/obj/effect/landmark/corpse/russian_rifle
+	name = "Russian"
+	corpseuniform = /obj/item/clothing/under/soviet
+	corpseshoes = /obj/item/clothing/shoes/jackboots
+	corpsehelmet = /obj/item/clothing/head/russofurhat
+	corpsesuit = /obj/item/clothing/suit/russofurcoat
+	corpsemask = /obj/item/clothing/mask/gas
+	corpsegloves = /obj/item/clothing/gloves/combat
+
 /obj/effect/landmark/corpse/russian/ranged
 	corpsehelmet = /obj/item/clothing/head/ushanka
 
