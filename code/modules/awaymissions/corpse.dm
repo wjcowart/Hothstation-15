@@ -178,6 +178,21 @@
 	corpseidjob = "Clown"
 	corpseidaccess = "Clown"
 
+/obj/effect/landmark/corpse/clown_security
+	name = "Security Clown"
+	corpseuniform = /obj/item/clothing/under/rank/clown
+	corpsesuit = /obj/item/clothing/suit/armor/bulletproof
+	corpsegloves = /obj/item/clothing/gloves/red
+	corpseshoes = /obj/item/clothing/shoes/clown_shoes
+	corpseradio = /obj/item/device/radio/headset
+	corpsemask = /obj/item/clothing/mask/gas/clown_hat
+	corpsehelmet = /obj/item/clothing/head/helmet/riot
+	corpsepocket1 = /obj/item/weapon/bananapeel
+	corpseback = /obj/item/weapon/storage/backpack/clown
+	corpseid = 1
+	corpseidjob = "Clown"
+	corpseidaccess = "Clown"
+
 /obj/effect/landmark/corpse/mime
 	name = "Mime"
 	corpseuniform = /obj/item/clothing/under/mime
@@ -312,4 +327,3 @@
 	corpsesuit = /obj/item/clothing/suit/cultrobes
 	corpseshoes = /obj/item/clothing/shoes/cult
 	corpsegloves = /obj/item/clothing/gloves/red
-	corpsepocket1 = /obj/item/weapon/card/id/salvage_captain

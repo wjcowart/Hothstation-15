@@ -1,11 +1,10 @@
 /mob/living/simple_animal/hostile/retaliate/clown
 	name = "clown"
-	desc = "A denizen of clown planet"
+	desc = "A denizen of clown planet."
 	icon_state = "clown"
 	icon_living = "clown"
 	icon_dead = "clown_dead"
 	icon_gib = "clown_gib"
-	speak_chance = 0
 	turns_per_move = 5
 	response_help = "pokes"
 	response_disarm = "gently pushes aside"
@@ -23,6 +22,7 @@
 	melee_damage_upper = 10
 	attacktext = "attacks"
 	attack_sound = 'sound/items/bikehorn.ogg'
+	var/obj/effect/landmark/corpse/corpse = /obj/effect/landmark/corpse/clown
 
 	min_oxy = 5
 	max_oxy = 0
