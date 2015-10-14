@@ -2,10 +2,40 @@
 	announceWhen	= 1
 	var/safe_zones = list(
 		/area/maintenance,
-		/area/crew_quarters/sleep,
-		/area/security/prison,
-		/area/security/gas_chamber,
-		/area/security/brig,
+		/area/bridge/,
+		/area/hydroponics/,
+		/area/medical/,
+		/area/research_outpost/,
+		/area/awaymission/,
+		/area/comms/,
+		/area/construction/,
+		/area/derelict/,
+		/area/derelictparts/,
+		/area/djstation/,
+		/area/engine/,
+		/area/engineering/,
+		/area/gateway/,
+		/area/hallway/,
+		/area/janitor/,
+		/area/janitor2/,
+		/area/lawoffice/,
+		/area/library/,
+		/area/mine/,
+		/area/planet/,
+		/area/prison/,
+		/area/crew_quarters/,
+		/area/science/,
+		/area/server/,
+		/area/shuttle/,
+		/area/storage/,
+		/area/supply/,
+		/area/syndicate_mothership/,
+		/area/tcomms/,
+		/area/tcommsat/,
+		/area/tdome/,
+		/area/teleporter/,
+		/area/wreck/,
+		/area/security/,
 		/area/shuttle,
 		/area/vox_station,
 		/area/syndicate_station
@@ -25,7 +55,7 @@
 /datum/event/radiation_storm/start()
 	spawn()
 		world << sound('sound/AI/radiation.ogg')
-		command_alert("High levels of radiation detected near the station, ETA in 30 seconds.. Please evacuate into one of the shielded maintenance tunnels.", "Anomaly Alert")
+		command_alert("A high-intensity radioactive snow storm is approaching, ETA in 30 seconds.. Please evacuate into the station to avoid the cold.", "Anomaly Alert")
 
 		for(var/area/A in areas)
 			if(A.z != 1 || is_safe_zone(A))
@@ -33,13 +63,9 @@
 			var/area/ma = get_area_master(A)
 			ma.radiation_alert()
 
-		make_maint_all_access()
 
 
-		sleep(30 SECONDS)
-
-
-		command_alert("The station has entered the radiation belt. Please remain in a sheltered area until we have passed the radiation belt.", "Anomaly Alert")
+		command_alert("The station has entered the storm. Please remain in a sheltered area until the storm has passed the station.", "Anomaly Alert")
 
 		for(var/i = 0, i < 15, i++)
 			var/irradiationThisBurst = rand(15,25) //everybody gets the same rads this radiation burst
@@ -67,16 +93,10 @@
 			sleep(25)
 
 
-		command_alert("The station has passed the radiation belt. Please report to medbay if you experience any unusual symptoms. Maintenance will lose all access again shortly.", "Anomaly Alert")
+		command_alert("The station has passed the snow storm. Please report to medbay if you experience any unusual symptoms, such as frostbite or mutations.", "Anomaly Alert")
 
 		for(var/area/A in areas)
 			if(A.z != 1 || is_safe_zone(A))
 				continue
 			var/area/ma = get_area_master(A)
 			ma.reset_radiation_alert()
-
-
-		sleep(600) // Want to give them time to get out of maintenance.
-
-
-		revoke_maint_all_access()

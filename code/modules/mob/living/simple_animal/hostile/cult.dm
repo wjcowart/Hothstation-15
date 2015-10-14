@@ -156,24 +156,31 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = -1
+	speed = 2
 	stop_automated_movement_when_pulled = 0
 	maxHealth = 500
 	health = 500
 	harm_intent_damage = 5
-	melee_damage_lower = 30
-	melee_damage_upper = 30
+	melee_damage_lower = 25
+	melee_damage_upper = 25
 	attacktext = "punches"
 	a_intent = I_HURT
+	ranged = 1
+	rapid = 1
+	retreat_distance = 3
+	minimum_distance = 3
 	var/obj/effect/landmark/corpse/corpse = /obj/effect/landmark/corpse/cultist_unarmed
-	var/weapon1
+	var/weapon1 = /obj/item/weapon/spellbook/oneuse/fireball
 	var/weapon2
-	min_oxy = 5
+	projectilesound = 'sound/effects/busteleport.ogg'
+	projectiletype = /obj/item/projectile/spell_projectile/fireball
+
+	min_oxy = 0
 	max_oxy = 0
 	min_tox = 0
-	max_tox = 1
+	max_tox = 0
 	min_co2 = 0
-	max_co2 = 5
+	max_co2 = 0
 	min_n2 = 0
 	max_n2 = 0
 	unsuitable_atoms_damage = 15
@@ -188,8 +195,6 @@
 	icon_state = "shade"
 	icon_living = "shade"
 	icon_dead = "shade_dead"
-
-	size = SIZE_HUGE
 	speak_chance = 0
 	turns_per_move = 5
 	response_help = "passes through"
@@ -198,7 +203,6 @@
 	speed = -1
 	maxHealth = 100
 	health = 100
-
 	harm_intent_damage = 5
 	melee_damage_lower = 8
 	melee_damage_upper = 12
@@ -237,8 +241,6 @@
 	icon_state = "behemoth"
 	icon_living = "behemoth"
 	icon_dead = "shade_dead"
-
-	size = SIZE_HUGE
 	speak_chance = 0
 	turns_per_move = 5
 	response_help = "pats"
@@ -247,13 +249,11 @@
 	speed = 3
 	maxHealth = 800
 	health = 800
-
 	harm_intent_damage = 5
 	melee_damage_lower = 30
 	melee_damage_upper = 30
 	attacktext = "smashes the fuck out of"
 	attack_sound = 'sound/weapons/heavysmash.ogg'
-
 	min_oxy = 0
 	max_oxy = 0
 	min_tox = 0
@@ -286,8 +286,6 @@
 	icon_state = "floating"
 	icon_living = "floating"
 	icon_dead = "shade_dead"
-
-	size = SIZE_HUGE
 	speak_chance = 0
 	turns_per_move = 5
 	response_help = "pats"
@@ -296,7 +294,6 @@
 	speed = -1
 	maxHealth = 250
 	health = 250
-
 	harm_intent_damage = 5
 	melee_damage_lower = 25
 	melee_damage_upper = 25
@@ -332,11 +329,9 @@
 /mob/living/simple_animal/hostile/artificer
 	name = "artificer"
 	desc = "A simple construct, used by the cultists for repair and construction."
-	icon_state = "aritficer"
-	icon_living = "aritficer"
+	icon_state = "artificer"
+	icon_living = "artificer"
 	icon_dead = "shade_dead"
-
-	size = SIZE_HUGE
 	speak_chance = 0
 	turns_per_move = 5
 	response_help = "pats"
@@ -345,13 +340,11 @@
 	speed = 0
 	maxHealth = 75
 	health = 75
-
 	harm_intent_damage = 5
 	melee_damage_lower = 5
 	melee_damage_upper = 5
 	attacktext = "bashes"
 	attack_sound = 'sound/weapons/rapidslice.ogg'
-
 	min_oxy = 0
 	max_oxy = 0
 	min_tox = 0

@@ -327,3 +327,12 @@
 	corpsesuit = /obj/item/clothing/suit/cultrobes
 	corpseshoes = /obj/item/clothing/shoes/cult
 	corpsegloves = /obj/item/clothing/gloves/red
+
+/obj/effect/landmark/corpse/Rhinehart
+	name = "Matthew Rhinehart"
+	corpseuniform = /obj/item/clothing/under/color/grey
+	corpsemask = /obj/item/clothing/mask/cigarette/cigar/havana
+	corpseshoes = /obj/item/clothing/shoes/black
+	corpsegloves = /obj/item/clothing/gloves/black
+	corpseback = /obj/item/weapon/gun/projectile/rocketlauncher
+	corpsepocket1 = /obj/item/weapon/lighter/zippo
