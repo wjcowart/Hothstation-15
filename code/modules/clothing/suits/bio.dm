@@ -94,3 +94,33 @@
 	desc = "It protected doctors from the Black Death, back then. You bet your arse it's gonna help you against viruses."
 	icon_state = "plaguedoctor"
 	item_state = "bio_suit"
+
+/obj/item/clothing/head/biohood_old
+	name = "old bio hood"
+	icon_state = "biohood_old"
+	item_state = "bio_hoodo"
+	desc = "An old hood that protects the head and face from biological comtaminants. Or atleast that's what the label says."
+	permeability_coefficient = 0.01
+	flags = FPRINT
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 100, rad = 20)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	body_parts_covered = FULL_HEAD
+	siemens_coefficient = 0.9
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/suit/bio_suit_old
+	name = "old bio suit"
+	desc = "A suit that protects against biological contamination. Or it did, at one point."
+	icon_state = "biosuit_old"
+	item_state = "bioo"
+	w_class = 4//bulky item
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	flags = FPRINT
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	slowdown = 1.0
+	allowed = list(/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/tank/emergency_nitrogen,/obj/item/weapon/pen,/obj/item/device/flashlight/pen)
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 100, rad = 20)
+	flags_inv = HIDEJUMPSUIT
+	siemens_coefficient = 0.9
+	species_restricted = list("Oldfag")

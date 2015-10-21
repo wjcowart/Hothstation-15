@@ -110,3 +110,31 @@
 		src.icon_state = "orange1"
 		del(H)
 	return
+
+/obj/item/clothing/shoes/brown_old
+	name = "old brown shoes"
+	desc = "A pair of old brown shoes."
+	icon_state = "brown_old"
+	item_state = "browno"
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/shoes/black_old
+	name = "old black shoes"
+	desc = "A pair of old black shoes."
+	icon_state = "black_old"
+	item_state = "blacko"
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/shoes/white_old
+	name = "old white shoes"
+	desc = "A pair of old white shoes."
+	icon_state = "white_old"
+	item_state = "whiteo"
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/shoes/orange_old
+	name = "old orange shoes"
+	desc = "A pair of old orange shoes."
+	icon_state = "orange_old"
+	item_state = "orangeo"
+	species_restricted = list("Oldfag")

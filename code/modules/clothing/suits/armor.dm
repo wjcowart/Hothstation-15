@@ -225,3 +225,23 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	slowdown = 0
 	armor = list(melee = 50, bullet = 30, laser = 20, energy = 20, bomb = 30, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/vest/security_old
+	name = "old security armor"
+	desc = "An old, out of date, blocky armored vest."
+	icon_state = "armor_old"
+	item_state = "armoro"
+	armor = list(melee = 50, bullet = 15, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/suit/armor/riot_old
+	name = "old riot suit"
+	desc = "A suit of armor with heavy padding to protect against melee attacks. Looks like it might impair movement, as well as cramp up your joints."
+	icon_state = "riot_old"
+	item_state = "swato"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	slowdown = 1
+	armor = list(melee = 80, bullet = 10, laser = 10, energy = 10, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEJUMPSUIT
+	siemens_coefficient = 0.5
+	species_restricted = list("Oldfag")

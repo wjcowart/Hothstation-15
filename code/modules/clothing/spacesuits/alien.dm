@@ -429,3 +429,13 @@
 	item_state = "vox-pressure-security"
 	desc = "A very alien-looking helmet for Nanotrasen-hired Vox. This one is for shitcurity."
 */
+
+/obj/item/clothing/suit/space/old
+	name = "old space suit"
+	desc = "An old and boxy spacesuit"
+	icon_state = "spaceo"
+	item_state = "space_old"
+	allowed = list(/obj/item/weapon/tank/nitrogen,/obj/item/weapon/tank/emergency_nitrogen,/obj/item/weapon/pen,/obj/item/device/flashlight/pen)
+	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 0, bio = 100, rad = 25)
+	pressure_resistance = 5 * ONE_ATMOSPHERE
+	species_restricted = list("Oldfag")

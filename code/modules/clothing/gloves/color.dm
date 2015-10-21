@@ -187,3 +187,17 @@
 
 /obj/item/clothing/gloves/brown/cargo
 	_color = "cargo" 		//Exists for washing machines. Is not different from brown gloves in any way.
+
+/obj/item/clothing/gloves/black_old
+	desc = "These gloves are fire-resistant, and old."
+	name = "old black gloves"
+	icon_state = "bgloves_old"
+	item_state = "blacko"
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/gloves/white_old
+	desc = "A pair of old white gloves"
+	name = "old white gloves"
+	icon_state = "lgloves_old"
+	item_state = "latexo"
+	species_restricted = list("Oldfag")

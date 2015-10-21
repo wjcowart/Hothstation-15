@@ -177,3 +177,59 @@
 	icon_state = "gpants"
 	_color = "gpants"
 	flags = FPRINT  | ONESIZEFITSALL
+
+/obj/item/clothing/under/blue_old
+	name = "old blue jumpsuit"
+	icon_state = "blue_old"
+	item_state = "blueo"
+	desc = "An old boxy jumpsuit."
+	flags = FPRINT  | ONESIZEFITSALL
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/under/red_old
+	name = "old red jumpsuit"
+	icon_state = "red_old"
+	item_state = "redo"
+	desc = "An old boxy jumpsuit."
+	flags = FPRINT  | ONESIZEFITSALL
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/under/black_old
+	name = "old black jumpsuit"
+	icon_state = "black_old"
+	item_state = "blacko"
+	desc = "An old boxy jumpsuit."
+	flags = FPRINT  | ONESIZEFITSALL
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/under/white_old
+	name = "old white jumpsuit"
+	icon_state = "white_old"
+	item_state = "whiteo"
+	desc = "An old boxy jumpsuit."
+	flags = FPRINT  | ONESIZEFITSALL
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/under/orange_old
+	name = "old white jumpsuit"
+	icon_state = "orange_old"
+	item_state = "orangeo"
+	desc = "An old boxy jumpsuit."
+	flags = FPRINT  | ONESIZEFITSALL
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/under/yellow_old
+	name = "old yellow jumpsuit"
+	icon_state = "yellow_old"
+	item_state = "yellowo"
+	desc = "An old boxy jumpsuit."
+	flags = FPRINT  | ONESIZEFITSALL
+	species_restricted = list("Oldfag")
+
+/obj/item/clothing/under/purple_old
+	name = "old purple jumpsuit"
+	icon_state = "purple_old"
+	item_state = "pinko"
+	desc = "An old boxy jumpsuit."
+	flags = FPRINT  | ONESIZEFITSALL
+	species_restricted = list("Oldfag")

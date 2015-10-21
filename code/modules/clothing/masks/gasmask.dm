@@ -166,3 +166,19 @@
 	desc = "Twoooo!"
 	icon_state = "owl"
 	species_fit = list("Vox")
+
+/obj/item/clothing/mask/gas_old
+	name = "old gas mask"
+	desc = "What the hell is this."
+	icon_state = "gas_mask_old"
+	flags = FPRINT  | BLOCK_GAS_SMOKE_EFFECT | MASKINTERNALS
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
+	w_class = 3.0
+	can_flip = 1
+	action_button_name = "Toggle Mask"
+	item_state = "gasmasko"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	siemens_coefficient = 0.9
+	body_parts_covered = FULL_HEAD
+	species_restricted = list("Oldfag")
