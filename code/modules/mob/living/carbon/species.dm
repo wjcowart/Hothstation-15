@@ -366,14 +366,6 @@ var/global/list/whitelisted_species = list("Human")
 
 	flags = HAS_SKIN_TONE | HAS_LIPS | HAS_UNDERWEAR | CAN_BE_FAT | NO_BLOOD
 
-/datum/species/oldfag
-	name = "Oldfag"
-	icobase = 'icons/mob/human_races/r_oldfag.dmi'
-	deform = 'icons/mob/human_races/r_def_human.dmi'
-	language = "Sol Common"
-	primitive = /mob/living/carbon/monkey
-	flags = HAS_SKIN_TONE | HAS_LIPS | IS_WHITELISTED
-
 /datum/species/unathi
 	name = "Unathi"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'
@@ -393,7 +385,7 @@ var/global/list/whitelisted_species = list("Human")
 	heat_level_2 = 480 //Default 400
 	heat_level_3 = 1100 //Default 1000
 
-	flags = HAS_LIPS | HAS_UNDERWEAR | HAS_TAIL
+	flags = IS_WHITELISTED | HAS_LIPS | HAS_UNDERWEAR | HAS_TAIL
 
 	flesh_color = "#34AF10"
 
@@ -407,7 +399,7 @@ var/global/list/whitelisted_species = list("Human")
 	language = "Clatter"
 	attack_verb = "punch"
 
-	flags = HAS_LIPS | NO_BREATHE | NO_BLOOD | NO_SKIN
+	flags = IS_WHITELISTED | HAS_LIPS | NO_BREATHE | NO_BLOOD | NO_SKIN
 
 	chem_flags = NO_DRINK | NO_EAT | NO_INJECT
 
@@ -502,7 +494,7 @@ var/global/list/whitelisted_species = list("Human")
 
 	primitive = /mob/living/carbon/monkey // TODO
 
-	flags = HAS_LIPS | HAS_UNDERWEAR | CAN_BE_FAT
+	flags = IS_WHITELISTED | HAS_LIPS | HAS_UNDERWEAR | CAN_BE_FAT
 
 	// Both must be set or it's only a 45% chance of manifesting.
 	default_mutations=list(M_REMOTE_TALK)
@@ -545,7 +537,7 @@ var/global/list/whitelisted_species = list("Human")
 	language = "Skrellian"
 	primitive = /mob/living/carbon/monkey/skrell
 
-	flags = HAS_LIPS | HAS_UNDERWEAR
+	flags = IS_WHITELISTED | HAS_LIPS | HAS_UNDERWEAR
 
 	flesh_color = "#8CD7A3"
 
@@ -570,7 +562,7 @@ var/global/list/whitelisted_species = list("Human")
 	breath_type = "nitrogen"
 
 	default_mutations = list(M_BEAK)
-	flags = NO_SCAN
+	flags = IS_WHITELISTED | NO_SCAN
 
 	blood_color = "#2299FC"
 	flesh_color = "#808D11"
